@@ -1,9 +1,8 @@
-//setting up the server in express 
 const express = require("express");
 
 
-let app= express();
-var PORT = process.env.PORT || 8080;
+let app = express();
+let PORT = process.env.PORT || 8080;
 
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
