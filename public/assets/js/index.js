@@ -14,8 +14,6 @@ const getNotes = () => {
   return $.ajax({
     url: "/api/notes",
     method: "GET",
-  }).then(function(response){
-    renderActiveNote();
   });
 };
 
@@ -25,10 +23,7 @@ const saveNote = (note) => {
     url: "/api/notes",
     data: note,
     method: "POST",
-  }).then(function(response){
-    handleNoteSave();
-  }
-  );
+  });
 };
 
 // A function for deleting a note from the db
@@ -36,8 +31,6 @@ const deleteNote = (id) => {
   return $.ajax({
     url: "api/notes/" + id,
     method: "DELETE",
-  }).then(function(response){
-    handleNoteDelete(id);
   });
 };
 /* OUT OF ALL THE API CALLS  */
