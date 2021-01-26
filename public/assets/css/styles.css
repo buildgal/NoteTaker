@@ -13,7 +13,6 @@ html, body {
   margin-right: 15px;
   font-size: 1.5rem;
   cursor: pointer;
-  
 }
 
 .note-textarea, .note-title {
@@ -21,22 +20,18 @@ html, body {
   width: 100%;
   outline: none;
   border: none;
-  
 }
 
 .note-textarea {
   resize: none;
   height: calc(100% - 63px);
   padding-top: 15px;
-  margin-bottom: 13px;
-  
 }
 
 .note-title {
-  height: 1000px;
+  height: 50px;
   margin-top: 13px;
   font-size: 3rem;
-  font-size: 100px;
 }
 
 .note-title:read-only, .note-textarea:read-only {
@@ -73,4 +68,3 @@ html, body {
   padding: 20px;
   cursor: pointer;
 }
-
