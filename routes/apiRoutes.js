@@ -38,9 +38,8 @@ module.exports = function(app){
                 res.json(true)
               })
       
-      app.delete("api/notes/:id", function (req,res) {
+      app.delete("/api/notes/:id", function (req,res) {
         const id = req.params.id;
-        let found; 
         notes.forEach((n, index) =>{
           if (id == n.id){
             notes.splice(index,1)
